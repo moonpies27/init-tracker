@@ -1,0 +1,145 @@
+{
+    "party": {
+        "members": [
+            {
+                "name": "Gil Blackshine",
+                "classes": [
+                    {
+                        "name": "Fighter",
+                        "level": 5,
+                        "subclasses": [
+                            "Cavalier"
+                        ]
+                    }
+                ],
+                "baseArmorClass": 15,
+                "armorClassBonus": 3,
+                "initiativeAdvantage": false,
+                "exhaustion": 0,
+                "conditions": [],
+                "baseHP": 38,
+                "currentHP": 38,
+                "buffs": [0,6],
+                "resistances": [],
+                "immunities": []
+            },
+            {
+                "name": "Zzzott",
+                "classes": [
+                    {
+                        "name": "Warlock",
+                        "level": 5,
+                        "subclasses": [
+                            "Celestial"
+                        ]
+                    }
+                ],
+                "baseArmorClass": 13,
+                "armorClassBonus": 2,
+                "initiativeAdvantage": true,
+                "conditions": [0,1],
+                "exhaustion": 0,
+                "baseHP": 38,
+                "currentHP": 38,
+                "buffs": [0,6],
+                "resistances": [],
+                "immunities": []
+            },
+            {
+                "name": "Kara",
+                "classes": [
+                    {
+                        "name": "Wizard",
+                        "level": 5,
+                        "subclasses": [
+                            "Bladesinger"
+                        ]
+                    }
+                ],
+                "baseArmorClass": 15,
+                "armorClassBonus": 2,
+                "initiativeBonus": 2,
+                "initiativeAdvantage": true,
+                "conditions": [0,1,2,3,4],
+                "exhaustion": 1,
+                "baseHP": 38,
+                "currentHP": 25,
+                "buffs": [0,2,3],
+                "resistances": [1],
+                "immunities": [0]
+            },
+            {
+                "name": "Ziltoid the Omniscient",
+                "classes": [
+                    {
+                        "name": "Sorcerer",
+                        "level": 6,
+                        "subclasses": [
+                            "Wild Magic"
+                        ]
+                    }
+                ],
+                "baseArmorClass": 15,
+                "armorClassBonus": 0,
+                "initiativeBonus": 0,
+                "initiativeAdvantage": false,
+                "conditions": [0,2],
+                "exhaustion": 0,
+                "baseHP": 38,
+                "currentHP": 38,
+                "buffs": [4],
+                "resistances": [],
+                "immunities": []
+            }
+        ]
+    },
+    "monsters": {
+        "members": [
+            {
+                "type": "Goblin",
+                "name": "Goblin 1",
+                "hpType": "fixed",
+                "hpDiceNumber": 0,
+                "hpDiceType": 6,
+                "baseHP": 10,
+                "currentHP": 7,
+                "baseArmorClass": 10,
+                "armorClassBonus": 0,
+                "resistances": [],
+                "immunities": [],
+                "initiativeBonus": 0,
+                "exhaustion": 0
+            },
+            {
+                "type": "Goblin",
+                "name": "Goblin 2",
+                "hpType": "fixed",
+                "hpDiceNumber": 0,
+                "hpDiceType": 6,
+                "baseHP": 10,
+                "currentHP": 10,
+                "baseArmorClass": 10,
+                "armorClassBonus": 0,
+                "resistances": [],
+                "immunities": [],
+                "initiativeBonus": 0,
+                "exhaustion": 0
+            },
+            {
+                "type": "Bugbear",
+                "name": "Bugbear 1",
+                "hpType": "rolled",
+                "hpDiceNumber": 4,
+                "hpDiceType": 10,
+                "baseHP": 25,
+                "currentHP": 17,
+                "baseArmorClass": 14,
+                "armorClassBonus": 1,
+                "resistances": [1,2],
+                "immunities": [],
+                "initiativeBonus": 1,
+                "exhaustion": 0
+            }
+        ]
+    }
+}
