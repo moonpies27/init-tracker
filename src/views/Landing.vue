@@ -4,7 +4,7 @@
       <v-toolbar-side-icon></v-toolbar-side-icon>
 
       <v-toolbar-title>
-        D&D Initiative Tracker
+        D&D 5e Combat Tracker
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
