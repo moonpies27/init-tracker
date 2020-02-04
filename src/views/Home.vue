@@ -1,40 +1,18 @@
 <template>
-  <div>
-    <v-toolbar dark color="purple">
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-
-      <v-toolbar-title>
-        D&D 5e Combat Tracker
-      </v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>search</v-icon>
-      </v-btn>
-    </v-toolbar>
-    <main class="main">
-      <CombatTrack></CombatTrack>
-    </main>
-    <v-footer class="pa-3" absolute="true">
-      <v-spacer></v-spacer>
-      <div>&copy; {{ new Date().getFullYear() }}</div>
-    </v-footer>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import CombatTrack from '@/components/CombatTrack.vue'
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
+
 export default {
+  name: 'home',
   components: {
-    CombatTrack
+    HelloWorld
   }
 }
 </script>
-
-<style>
-main {
-  text-align: center;
-  display: block;
-}
-</style>

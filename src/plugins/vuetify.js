@@ -1,17 +1,7 @@
 import Vue from 'vue'
-import Vuetify, {
-  VApp, // required
-  VToolbar,
-  VFooter
-} from 'vuetify/lib'
-import 'vuetify/src/stylus/app.styl'
-import '@mdi/font/css/materialdesignicons.min.css'
+import Vuetify from 'vuetify/lib'
 
-Vue.use(Vuetify, {
-  iconfont: 'mdi',
-  components: {
-    VApp,
-    VToolbar,
-    VFooter
-  }
-})
+Vue.use(Vuetify)
+
+const opts = {}
+export default new Vuetify(opts)
