@@ -1,39 +1,8 @@
 <template>
   <v-app>
     <!-- Begin Nav Drawer -->
-    <v-navigation-drawer
-      v-model="drawer"
-      app
-      clipped
-    >
-      <v-list dense>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-format-list-text</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Initiative Track</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <Navigator></Navigator>
     <!-- End Nav Drawer -->
-
-    <v-app-bar
-      app
-      clipped-left
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>5e Combat Tracker</v-toolbar-title>
-    </v-app-bar>
 
     <!-- Begin Main Content -->
     <v-content>
@@ -49,10 +18,12 @@
 </template>
 
 <script>
+import Navigator from '@/components/Navigator.vue'
 export default {
-  data: () => ({
-    drawer: null
-  }),
+  components: {
+    Navigator
+  },
+  data: () => ({}),
   created () {
     this.$vuetify.theme.dark = true
   }
