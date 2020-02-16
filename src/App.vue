@@ -1,5 +1,6 @@
 <template>
-  <v-app id="inspire">
+  <v-app>
+    <!-- Begin Nav Drawer -->
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -24,6 +25,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <!-- End Nav Drawer -->
 
     <v-app-bar
       app
@@ -33,20 +35,21 @@
       <v-toolbar-title>5e Combat Tracker</v-toolbar-title>
     </v-app-bar>
 
+    <!-- Begin Main Content -->
     <v-content>
     </v-content>
+    <!-- End Main Content -->
 
+    <!-- Begin Footer -->
     <v-footer app>
       <span>&copy; 2019</span>
     </v-footer>
+    <!-- End Footer -->
   </v-app>
 </template>
 
 <script>
 export default {
-  props: {
-    source: String
-  },
   data: () => ({
     drawer: null
   }),
