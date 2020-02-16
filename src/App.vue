@@ -1,27 +1,14 @@
 <template>
   <v-app>
-    <!-- Begin Nav Drawer -->
-    <Navigator></Navigator>
-    <!-- End Nav Drawer -->
-
-    <!-- Begin Main Content -->
-    <v-content>
-    </v-content>
-    <!-- End Main Content -->
-
-    <!-- Begin Footer -->
-    <v-footer app>
-      <span>&copy; 2019</span>
-    </v-footer>
-    <!-- End Footer -->
+    <Home></Home>
   </v-app>
 </template>
 
 <script>
-import Navigator from '@/components/Navigator.vue'
+import Home from '@/views/Home.vue'
 export default {
   components: {
-    Navigator
+    Home
   },
   data: () => ({}),
   created () {
