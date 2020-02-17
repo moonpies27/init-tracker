@@ -8,15 +8,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'combatTrack',
-  data: () => ({
-    characters: [
-      { name: 'Bruenor', class: 'Fighter', race: 'Dwarf', id: 0 },
-      { name: 'Celeste', class: 'Cleric', race: 'Human', id: 1 },
-      { name: 'Jarlaxle', class: 'Rogue', race: 'Drow', id: 2 }
-    ]
-  }),
+  data: () => ({}),
+  computed: {
+    ...mapState(['characters'])
+  },
   methods: {
     raceClass: (r, c) => {
       return `${r} ${c}`
