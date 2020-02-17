@@ -1,26 +1,28 @@
 export default {
   characters: [
-    { name: 'Bruenor', class: 'Fighter', race: 'Dwarf', id: 0 },
-    { name: 'Celeste', class: 'Cleric', race: 'Human', id: 1 },
-    { name: 'Jarlaxle', class: 'Rogue', race: 'Drow', id: 2 }
+    { id: 0, name: 'Bruenor', class: 'Fighter', race: 'Dwarf' },
+    { id: 1, name: 'Celeste', class: 'Cleric', race: 'Human' },
+    { id: 2, name: 'Jarlaxle', class: 'Rogue', race: 'Drow' }
   ],
   monsters: [],
   phbConditions: [
     { id: 0, name: 'Blinded', icon: 'sunglasses' },
-    { id: 0, name: 'Charmed', icon: 'mother-heart' },
-    { id: 0, name: 'Deafened', icon: 'ear-hearing-off' },
-    { id: 0, name: 'Exhausted', icon: 'battery-medium' },
-    { id: 0, name: 'Frightened', icon: 'ghost' },
-    { id: 0, name: 'Grappled', icon: 'handshake' },
-    { id: 0, name: 'Incapacitated', icon: 'account-cancel' },
-    { id: 0, name: 'Invisible', icon: 'account-outline' },
-    { id: 0, name: 'Paralyzed', icon: 'head-flash-outline' },
-    { id: 0, name: 'Petrified', icon: 'pillar' },
-    { id: 0, name: 'Poisoned', icon: 'bottle-tonic-skull' },
-    { id: 0, name: 'Prone', icon: 'rotate-right-variant' },
-    { id: 0, name: 'Restrained', icon: 'seatbelt' },
-    { id: 0, name: 'Stunned', icon: 'account-alert' },
-    { id: 0, name: 'Unconscious', icon: 'account-off' }
+    { id: 1, name: 'Charmed', icon: 'mother-heart' },
+    { id: 2, name: 'Deafened', icon: 'ear-hearing-off' },
+    { id: 3, name: 'Exhausted', icon: 'battery-medium' },
+    { id: 4, name: 'Frightened', icon: 'ghost' },
+    { id: 5, name: 'Grappled', icon: 'handshake' },
+    { id: 6, name: 'Incapacitated', icon: 'account-cancel' },
+    { id: 7, name: 'Invisible', icon: 'account-outline' },
+    { id: 8, name: 'Paralyzed', icon: 'head-flash-outline' },
+    { id: 9, name: 'Petrified', icon: 'pillar' },
+    { id: 10, name: 'Poisoned', icon: 'bottle-tonic-skull' },
+    { id: 11, name: 'Prone', icon: 'rotate-right-variant' },
+    { id: 12, name: 'Restrained', icon: 'seatbelt' },
+    { id: 13, name: 'Stunned', icon: 'account-alert' },
+    { id: 14, name: 'Unconscious', icon: 'account-off' }
   ],
-  effects: []
+  effects: [
+    { id: 0, name: 'Concentration', icon: 'head-cog-outline' }
+  ]
 }
