@@ -6,6 +6,7 @@
 
     <!-- Begin Main Content -->
     <v-content>
+      <CombatTrack></CombatTrack>
     </v-content>
     <!-- End Main Content -->
 
@@ -20,11 +21,13 @@
 <script>
 // @ is an alias to /src
 import Navigator from '@/components/Navigator.vue'
+import CombatTrack from '@/components/CombatTrack.vue'
 
 export default {
   name: 'home',
   components: {
-    Navigator
+    Navigator,
+    CombatTrack
   }
 }
 </script>
