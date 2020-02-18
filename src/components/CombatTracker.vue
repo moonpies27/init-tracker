@@ -11,7 +11,7 @@
 import { mapState } from 'vuex'
 
 export default {
-  name: 'combatTrack',
+  name: 'combatTracker',
   data: () => ({}),
   computed: {
     ...mapState(['characters'])

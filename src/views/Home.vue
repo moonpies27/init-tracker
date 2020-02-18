@@ -6,7 +6,7 @@
 
     <!-- Begin Main Content -->
     <v-content>
-      <CombatTrack></CombatTrack>
+      <CombatTracker v-if="combatTrackerActive"></CombatTracker>
     </v-content>
     <!-- End Main Content -->
 
@@ -21,13 +21,18 @@
 <script>
 // @ is an alias to /src
 import Navigator from '@/components/Navigator.vue'
-import CombatTrack from '@/components/CombatTrack.vue'
+import CombatTracker from '@/components/CombatTracker.vue'
 
 export default {
   name: 'home',
   components: {
     Navigator,
-    CombatTrack
+    CombatTracker
+  },
+  computed: {
+    combatTrackerActive () {
+      return this.$store.state.navigatorChosenId === 0
+    }
   }
 }
 </script>

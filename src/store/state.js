@@ -26,7 +26,7 @@ export default {
     { id: 0, name: 'Concentration', icon: 'mdi-head-cog-outline' }
   ],
   menuOptions: [
-    { id: 0, title: 'Initiative Track', icon: 'mdi-format-list-text' },
+    { id: 0, title: 'Combat Tracker', icon: 'mdi-format-list-text' },
     { id: 1, title: 'Party Management', icon: 'mdi-account-group' },
     { id: 2, title: 'Settings', icon: 'mdi-settings' }
   ],
