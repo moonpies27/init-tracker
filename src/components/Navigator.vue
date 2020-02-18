@@ -6,7 +6,12 @@
         clipped
       >
         <v-list dense>
-          <v-list-item link v-for="menuOpt in menuOptions" :key="menuOpt.index">
+          <v-list-item
+            link
+            v-for="(menuOpt, index) in menuOptions"
+            :key="index"
+            @click="setNavigatorChosenId(menuOpt.id)"
+          >
             <v-list-item-action>
               <v-icon>{{ menuOpt.icon }}</v-icon>
             </v-list-item-action>
@@ -36,6 +41,11 @@ export default {
   computed: {
     menuOptions () {
       return this.$store.state.menuOptions
+    }
+  },
+  methods: {
+    setNavigatorChosenId (id) {
+      this.$store.commit('setNavigatorChosenId', id)
     }
   }
 }

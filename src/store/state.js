@@ -27,6 +27,8 @@ export default {
   ],
   menuOptions: [
     { id: 0, title: 'Initiative Track', icon: 'mdi-format-list-text' },
-    { id: 1, title: 'Settings', icon: 'mdi-settings' }
-  ]
+    { id: 1, title: 'Party Management', icon: 'mdi-account-group' },
+    { id: 2, title: 'Settings', icon: 'mdi-settings' }
+  ],
+  navigatorChosenId: 0
 }
