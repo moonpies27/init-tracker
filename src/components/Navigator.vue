@@ -6,20 +6,12 @@
         clipped
       >
         <v-list dense>
-          <v-list-item link>
+          <v-list-item link v-for="menuOpt in menuOptions" :key="menuOpt.index">
             <v-list-item-action>
-              <v-icon>mdi-format-list-text</v-icon>
+              <v-icon>{{ menuOpt.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title>Initiative Track</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item link>
-            <v-list-item-action>
-              <v-icon>mdi-settings</v-icon>
-            </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>Settings</v-list-item-title>
+              <v-list-item-title>{{ menuOpt.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -40,7 +32,12 @@ export default {
   name: 'Navigator',
   data: () => ({
     drawer: null
-  })
+  }),
+  computed: {
+    menuOptions () {
+      return this.$store.state.menuOptions
+    }
+  }
 }
 </script>
 
