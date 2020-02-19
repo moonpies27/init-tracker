@@ -1,17 +1,7 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <h1>Application Settings</h1>
-    <v-list-item two-line>
-      <v-list-item-content>
-        <v-list-item-title>App Theme</v-list-item-title>
-        <v-list-item-subtitle>Choose between light mode and dark mode. Refresh page to take effect.</v-list-item-subtitle>
-      </v-list-item-content>
-      <v-list-item-action>
-        <v-container fluid>
-          <v-switch v-model="appThemeChoice" label="Enable Dark Mode"></v-switch>
-        </v-container>
-      </v-list-item-action>
-    </v-list-item>
+    <v-switch v-model="appThemeChoice" label="Enable Dark Mode"></v-switch>
   </v-container>
 </template>
 
