@@ -19,7 +19,12 @@ export default {
   name: 'availableCharacters',
   computed: {
     characterList () {
-      return this.$store.state.characters
+      let filteredList = this.$store.state.characters.filter(c => {
+        if (!this.$store.state.party.includes(c.id)) {
+          return c
+        }
+      })
+      return filteredList
     }
   },
   methods: {
