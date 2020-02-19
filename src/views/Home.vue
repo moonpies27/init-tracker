@@ -6,7 +6,8 @@
 
     <!-- Begin Main Content -->
     <v-content>
-      <CombatTracker v-if="combatTrackerActive"></CombatTracker>
+      <CombatTracker v-if="showCombatTracker"></CombatTracker>
+      <AppSettings v-if="showSettingsMenu"></AppSettings>
     </v-content>
     <!-- End Main Content -->
 
@@ -22,16 +23,21 @@
 // @ is an alias to /src
 import Navigator from '@/components/Navigator.vue'
 import CombatTracker from '@/components/CombatTracker.vue'
+import AppSettings from '@/components/AppSettings.vue'
 
 export default {
   name: 'home',
   components: {
     Navigator,
-    CombatTracker
+    CombatTracker,
+    AppSettings
   },
   computed: {
-    combatTrackerActive () {
+    showCombatTracker () {
       return this.$store.state.navigatorChosenId === 0
+    },
+    showSettingsMenu () {
+      return this.$store.state.navigatorChosenId === 2
     }
   }
 }

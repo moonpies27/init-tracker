@@ -12,7 +12,12 @@ export default {
   },
   data: () => ({}),
   created () {
-    this.$vuetify.theme.dark = true
+    // Apply app theme
+    let savedTheme = JSON.parse(localStorage.getItem('darkTheme'))
+    if (savedTheme === null) {
+      savedTheme = false
+    }
+    this.$vuetify.theme.isDark = savedTheme
   }
 }
 </script>
