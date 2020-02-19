@@ -4,6 +4,7 @@ export default {
     { id: 1, name: 'Celeste', class: 'Cleric', race: 'Human' },
     { id: 2, name: 'Jarlaxle', class: 'Rogue', race: 'Drow' }
   ],
+  party: [0, 1],
   monsters: [],
   phbConditions: [
     { id: 0, name: 'Blinded', icon: 'mdi-sunglasses' },
